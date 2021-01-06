@@ -214,7 +214,7 @@ def Complement(PCN_FORM,var_nos):
 
 def main():
     print("Unate Recursive Complement")
-    file=open(r"C:\Users\user\Desktop\UnateRecursiveComplement\Inputs\part5.pcn","r")
+    file=open(r"C:\Users\user\Desktop\UnateRecursiveComplement\Inputs\part5.pcn","r") # "your file location\file.pcn" 
     PCN_FORM,var_nos=func_proc(file)
     Output=Complement(PCN_FORM,var_nos)
     printer(Output,var_nos)
