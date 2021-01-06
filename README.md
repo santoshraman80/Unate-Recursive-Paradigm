@@ -1,5 +1,6 @@
 # Unate-Recursive-Paradigm
 This project deals with calculation of complement of a boolean function using Unate Recursive Paradigm. Tested for functions with upto 10 variables and 150 product terms. 
+Can handle functions efficiently with upto 20 variables and 2^20 product terms.
 
 We can very well calculate complements for small boolean functions comprising of 3 or 4 variables by hand. But when you are given a function with more than 10 variables with hundreds of product terms, it becomes tedious. So for a very large scale operation, we have to come up with an efficient algorithm to complement functions with huge number of variables and product terms. In this project, Unate Recursive Paradigm (URP) is used
 
