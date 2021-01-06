@@ -6,20 +6,20 @@ We can very well calculate complements for small boolean functions comprising of
 
 A simple version of the algorithm is below: 
   
-1.  cubelist Complement(function) {
-2. // check if F is simple enough to complement it directly and quit
-3. if (function is simple and we can complement it directly )
-4. return(direct complement using Demorgan's laws)
-5. else {
-6. // do recursion
-7. let x = most binate variable for splitting
-8. Pos_CF = Complement(positiveCofactor(function, x ))
-9. Neg_CF= Complement(negativeCofactor(function, x'))
-10. P=AND(x,Pos_CF)
-11. N=AND(x’,Neg_CF)
-12. return(OR(P,N))
-13. } // end recursion
-14. }
+cubelist Complement(function) {
+// check if func is simple enough to complement it directly and quit
+if (function is simple and we can complement it directly ):
+return(direct complement using Demorgan's laws)
+else {
+// do recursion
+let x = most binate variable for splitting
+Pos_CF = Complement(positiveCofactor(function, x ))
+Neg_CF= Complement(negativeCofactor(function, x'))
+P=AND(x,Pos_CF)
+N=AND(x’,Neg_CF)
+return(OR(P,N))
+} // end recursion
+}
 
 # Termination Conditions:
 If a cubelist is empty, and has no cubes in it, then this represents the Boolean equation “0”. The complement is clearly “1”, which is
