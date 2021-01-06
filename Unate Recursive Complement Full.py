@@ -10,6 +10,7 @@
 #                                         #
 ###########################################                                        
 TESTED FOR BOOLEAN FUNCTIONS UPTO 10 VARIABLES AND 150 CUBES(PRODUCT TERMS)
+       DID THIS HONORS PROJECT AS A PART OF VLSI CAD LOGIC: PART 1
 
 '''
 
