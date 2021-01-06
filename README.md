@@ -6,8 +6,8 @@ We can very well calculate complements for small boolean functions comprising of
 
 A simple version of the algorithm is below: 
   
-cubelist Complement(function) {
-// check if func is simple enough to complement it directly and quit
+1. cubelist Complement(function) {
+2. // check if func is simple enough to complement it directly and quit
 if (function is simple and we can complement it directly ):
 return(direct complement using Demorgan's laws)
 else {
