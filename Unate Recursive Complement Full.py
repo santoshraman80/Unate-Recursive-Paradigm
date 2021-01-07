@@ -167,13 +167,13 @@ def Cofactor_Calculator(PCN_FORM,splitting_variable,choice,var_nos):
         return dcc
     return pos_neg
 
-def PCN_AND(function,splitting_variable,choice) : #ANDing splitting variable with cofactors { Ex: (x AND Complement(+ve CF)) OR (x' AND Complement(-ve CF))}
+def PCN_AND(function,splitting_variable,choice) : #ANDing splitting variable with cofactors { Ex: (x AND Complement(+ve CF)) , (x' AND Complement(-ve CF))}
     for x in range(len(function)):
         function[x][splitting_variable]= choice
     return function
 
 #ORing of functions
-def PCN_OR(function_p,function_n): #shannon expansion complement version: (x AND Complement(+ve CF)) OR (x' AND Complement(-ve CF)))
+def PCN_OR(function_p,function_n): #shannon expansion complement version: OR(x AND (Complement(+ve CF)),x' AND (Complement(-ve CF)))
     function_ret =[]
     function_ret.extend(function_p)
     function_ret.extend(function_n)
@@ -199,9 +199,9 @@ def printer(Out,vars_in):
 
             
 def Complement(PCN_FORM,var_nos):
-    if(len(PCN_FORM)== 0):  # F has no cubes.
+    if(len(PCN_FORM)== 0):  #has no cubes.
         return [[ '11' for y in range(0, var_nos)]]
-    elif(len(PCN_FORM)== 1): # F has just 1 cube.
+    elif(len(PCN_FORM)== 1): #has just 1 cube.
         return drct_complement(PCN_FORM,var_nos)
     else: #recursion
         splitting_variable=split_var(PCN_FORM,var_nos)
