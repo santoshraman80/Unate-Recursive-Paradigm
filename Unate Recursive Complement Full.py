@@ -181,7 +181,7 @@ def PCN_OR(function_p,function_n): #shannon expansion complement version: OR(x A
 
 #Function to write output into file
 def printer(Out,vars_in):
-    fh=open(r"C:\Users\user\Desktop\UnateRecursiveComplement\Outputs\output_5.txt","w")
+    fh=open(r"C:\Users\user\Desktop\UnateRecursiveComplement\Outputs\output_5.txt","w") #location of destination file fr output to be written
     fh.write(str(vars_in)+"\n")
     fh.write(str(len(Out))+"\n")
     for x in Out:
